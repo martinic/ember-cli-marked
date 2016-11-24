@@ -12,7 +12,7 @@ This provides
 
 
 ```js
-// app/models/todo.js
+// app/app.js
 
 import marked from 'marked';
 
