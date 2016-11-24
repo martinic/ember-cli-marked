@@ -38,7 +38,7 @@ export default Ember.Helper.helper(function(params) {
 
 ## Sample app
 
-Tom Dale's blog example using Ember CLI and EmberPouch: [broerse/ember-cli-blog](https://github.com/broerse/ember-cli-blog)
+Tom Dale's blog example using Ember CLI and ember-cli-marked: [broerse/ember-cli-blog](https://github.com/broerse/ember-cli-blog)
 
 ## Credits
 
