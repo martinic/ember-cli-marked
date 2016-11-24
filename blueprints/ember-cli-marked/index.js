@@ -5,7 +5,7 @@ module.exports = {
 
   afterInstall: function() {
     return this.addBowerPackagesToProject([
-      { name: 'marked', target: '^0.3.6' },
+      { name: 'marked', target: '^0.3.6' }
     ]);
   }
 };
