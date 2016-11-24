@@ -1,27 +1,48 @@
-# Ember-cli-marked
 
-This README outlines the details of collaborating on this Ember addon.
+Ember CLI Addon for the marked.js
 
-## Installation
+## Install and setup
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-marked`
-* `npm install`
-* `bower install`
+```bash
+ember install ember-cli-marked
+```
 
-## Running
+This provides
+- `import marked from 'marked'`
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
 
-## Running Tests
+```js
+// app/models/todo.js
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+import marked from 'marked';
 
-## Building
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  breaks: true
+});
+```
 
-* `ember build`
+You can now create helpers like this.
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+```js
+// app/helpers/format-markdown.js
+
+import Ember from 'ember';
+import marked from 'marked';
+
+export default Ember.Helper.helper(function(params) {
+  let value = params[0];
+  return Ember.String.htmlSafe(marked(value));
+});
+```
+
+## Sample app
+
+Tom Dale's blog example using Ember CLI and EmberPouch: [broerse/ember-cli-blog](https://github.com/broerse/ember-cli-blog)
+
+## Credits
+
+And of course thanks to all our wonderful contributors, [here](https://github.com/martinic/ember-cli-marked/graphs/contributors)!
+
+## Changelog
+* **0.1.0-beta.1** - First Beta release
