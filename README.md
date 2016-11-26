@@ -45,5 +45,7 @@ Tom Dale's blog example using Ember CLI and ember-cli-marked: [broerse/ember-cli
 And of course thanks to all our wonderful contributors, [here](https://github.com/martinic/ember-cli-marked/graphs/contributors)!
 
 ## Changelog
+* **0.1.0-beta.4** - Switch to broccoli-stew
+* **0.1.0-beta.3** - Switch to the moment.js npm package
 * **0.1.0-beta.2** - Fix blueprint
 * **0.1.0-beta.1** - First Beta release
