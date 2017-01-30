@@ -3,6 +3,8 @@ Ember CLI Addon for marked.js
 
 ## Install and setup
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/martinic/ember-cli-marked.svg)](https://greenkeeper.io/)
+
 ```bash
 ember install ember-cli-marked
 ```
